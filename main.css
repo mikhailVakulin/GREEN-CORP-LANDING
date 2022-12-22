@@ -240,3 +240,7 @@ footer {
     padding: 50px 10px;
   }
 }
+
+.animate__animated {
+  --animate-duration: 3s;
+}
