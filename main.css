@@ -239,8 +239,15 @@ footer {
   footer {
     padding: 50px 10px;
   }
+  .features {
+    padding: 50px 10px;
+  }
 }
 
 .animate__animated {
   --animate-duration: 3s;
+}
+
+.features {
+  padding: 115px 60px;
 }
