@@ -242,6 +242,9 @@ footer {
   .features {
     padding: 50px 10px;
   }
+  .cards {
+    grid-template-columns: auto;
+  }
 }
 
 .animate__animated {
