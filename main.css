@@ -251,3 +251,37 @@ footer {
 .features {
   padding: 115px 60px;
 }
+
+.cards {
+  display: grid;
+  grid-gap: 50px;
+  grid-template-columns: 30% 30% 30%;
+}
+
+.card {
+  padding: 35px 40px 25px 40px;
+  border: 1px solid #d9e4e6;
+  border-radius: 5px;
+}
+
+.card h3 {
+  font-size: 16px;
+  line-height: 22px;
+  opacity: 0.8;
+}
+
+.card__logo {
+  width: 100px;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50px;
+  background-color: #eaeff9;
+}
+
+.card__logo i {
+  color: #23a030;
+  font-size: 32px;
+  font-weight: 700;
+}
