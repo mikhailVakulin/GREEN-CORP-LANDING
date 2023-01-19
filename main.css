@@ -324,6 +324,32 @@ footer {
   width: 50vw;
 }
 
+.promo__card {
+  background-color: white;
+  padding: 30px 40px;
+  font-size: 20px;
+  line-height: 20px;
+  font-weight: 500;
+  border-radius: 25px;
+}
+
+.promo__card p {
+  opacity: 0.8;
+}
+
+.card__btn button {
+  background-color: #107b1c;
+  margin-top: 20px;
+  padding: 15px 30px;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.fa-chevron-right {
+  font-size: 15px;
+  margin-left: 5px;
+}
+
 @media (max-width: 720px) {
   header {
     padding: 10px;
@@ -381,5 +407,18 @@ footer {
   .features__savings-box {
     margin-right: none;
     margin-bottom: 30px;
+  }
+  .promo__image {
+    height: 500px;
+    width: auto;
+    background-repeat: no-repeat;
+  }
+  .promo {
+    flex-direction: column-reverse;
+  }
+  .promo__right {
+    padding: 50px 10px;
+    height: auto;
+    width: auto;
   }
 }
