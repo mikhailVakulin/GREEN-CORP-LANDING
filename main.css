@@ -62,6 +62,7 @@ button {
   background: url("img/back.png") no-repeat;
   background-position: center;
   background-size: cover;
+  position: relative;
 }
 
 .about h1 {
@@ -313,7 +314,7 @@ footer {
 }
 
 .promo__image {
-  background-image: url("/GREEN-CORP-LANDING/img/promo.jpg");
+  background-image: url("/img/promo.jpg");
   background-size: cover;
   width: 50vw;
 }
@@ -430,4 +431,11 @@ footer {
   color: #23a030;
   font-size: 32px;
   font-weight: 700;
+}
+
+.orb-canvas {
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 100%;
 }
