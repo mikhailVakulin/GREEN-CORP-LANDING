@@ -17,8 +17,6 @@ function initIncreaseNumberAnimation() {
   const element = document.querySelector(".features__clients__count");
   increaseNumberAnimationStep(0, element, 5000);
 }
-initIncreaseNumberAnimation();
-console.log(initIncreaseNumberAnimation());
 
 document
   .querySelector("#budget")
@@ -41,3 +39,44 @@ document
       document.querySelector("form").removeChild(otherInput);
     }
   });
+
+function updateScroll() {
+  if (window.scrollY > 0) {
+    document.querySelector("header").classList.add("header__scrolled");
+  } else {
+    document.querySelector("header").classList.remove("header__scrolled");
+  }
+  let countElementPosition = document.querySelector(
+    ".features__clients__count"
+  ).offsetTop;
+  console.log(countElementPosition);
+  let windowBottomPosition = window.scrollY + window.innerHeight;
+
+  if (
+    windowBottomPosition >= countElementPosition &&
+    animationInited === false
+  ) {
+    animationInited = true;
+    initIncreaseNumberAnimation();
+  }
+}
+
+window.addEventListener("scroll", updateScroll);
+
+let animationInited = false;
+
+function addSmoothScroll(anchor) {
+  anchor.addEventListener("click", onLinkClick);
+}
+function onLinkClick(event) {
+  event.preventDefault();
+  document.querySelector(event.target.getAttribute("href")).scrollIntoView({
+    behavior: "smooth",
+  });
+}
+
+document
+  .querySelectorAll('a[href ^= "#"]')
+  .forEach((anchor) => addSmoothScroll(anchor));
+
+addSmoothScroll(document.querySelector(".more-button"));
